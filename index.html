@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Challenge</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <ul class="navbar-nav mr-auto home-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons/all-visualizations.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data/table.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizations/max-temperature.html">Max
+                            Temperature</a>
+                        <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="visualizations/wind-speed.html">Wind Speed</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Main content -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="container border-box">
+                        <h1>Latitude vs . . . </h1>
+                        <h2>Max Temperature, Humidity, Cloudiness, and Wind Speed</h2>
+                        <hr>
+                        <div>
+                            <img src="resources/temperature.png" class="main-image" alt="Max Temperature Plot"
+                                style="float:left; margin-right: 20px;">
+                        </div>
+                        <p style="margin-top: 0;">
+                            The purpose of this analysis was to determine how weather changes as latitude nears the
+                            equator. Data analysis was performed on a random sample of 500 cities across the globe to
+                            determine the relationship between latitude and various weather elements, including:
+                            temperature, humidity, cloudiness and wind speed. Does temperature change as the latitude
+                            nears the equator? Is there an observable relationship between latitude and temperature?
+                        </p>
+                        <p>
+                            Scatter plots where graphed using Matplotlib to depict the relationships between latitude
+                            and the four weather elements. It was determined that there was one observable relationship
+                            in the dataset: Latitude vs Temperature. Specifically, temperature increases as the latitude
+                            approaches the equator (lat=0). Relationships between Latitude and Humidity / Cloudiness /
+                            Wind Speed were not observed.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="container border-box">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="img-container">
+                                    <a href="visualizations/max-temperature.html" class="img-link">
+                                        <img src="resources/temperature.png" alt="Max Temperature Plot"
+                                            class="img-fluid">
+                                        <div class="img-overlay"></div>
+                                        <div class="img-text">Max Temperature</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="img-container">
+                                    <a href="visualizations/humidity.html" class="img-link">
+                                        <img src="resources/humidity.png" alt="Humidity Plot" class="img-fluid">
+                                        <div class="img-overlay"></div>
+                                        <div class="img-text">Humidity</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="img-container">
+                                    <a href="visualizations/cloudiness.html" class="img-link">
+                                        <img src="resources/cloudiness.png" alt="Cloudiness Plot" class="img-fluid">
+                                        <div class="img-overlay"></div>
+                                        <div class="img-text">Cloudiness</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="img-container">
+                                    <a href="visualizations/wind-speed.html" class="img-link">
+                                        <img src="resources/wind.png" alt="Wind Plot" class="img-fluid">
+                                        <div class="img-overlay"></div>
+                                        <div class="img-text">Wind Speed</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</body>
+
+</html>
